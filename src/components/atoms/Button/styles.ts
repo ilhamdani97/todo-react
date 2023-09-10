@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import colors from '../../../utils/colors';
 
 const Buttons = styled.button<{ variant?: 'primary' | 'secondary' | 'disable', mode: 'small' | 'default' }>`
-    background-color: ${props => props.variant === 'primary' ? colors.purplePrimary: props.variant === 'secondary' ? colors.white : colors.gray};
+    background-color: ${props => props.variant === 'primary' ? colors.purplePrimary: props.variant === 'secondary' ? 'transparent' : colors.gray};
     color: ${props => props.variant === 'primary' ? colors.white : props.variant === 'secondary' ? colors.purplePrimary : colors.white};
     font-size: 16px;
     padding: ${props => props.mode === 'small' ? '2px' : '12px'};
@@ -13,7 +13,7 @@ const Buttons = styled.button<{ variant?: 'primary' | 'secondary' | 'disable', m
     transition: background 0s ease-out 0s;
     &:hover,
     &:focus {
-        background-color: ${props => props.variant === 'disable' ? colors.gray : colors.darkPurple};
+        background-color: ${props => props.variant === 'disable' ? colors.gray : props.variant === 'secondary' ? 'transparent' : colors.darkPurple};
         border-color: ${props => props.variant === 'disable' ? colors.gray : colors.darkPurple};
         transition-duration: 0.3s;
     };

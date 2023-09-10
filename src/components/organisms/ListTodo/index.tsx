@@ -78,13 +78,16 @@ const ListTodo = ({
                             onActionEdit={() => setIndexEdit(index)}
                             onClickEdit={() => {
                                 onClickEdit();
-                                setIndexEdit(null)
+                                setIndexEdit(null);
                             }}
                             key={index} 
                             active={data.completed} 
                             title={data.todo}
                             onSelect={() => onSeleceted(index)}
-                            onDelete={() => onDeleted(index)}
+                            onDelete={() => {
+                                onDeleted(index);
+                                setIndexEdit(null);
+                            }}
                         />
                     ))}
                 </>

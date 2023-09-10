@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import TodoLists from "./styles";
-import { FormAddList, ListTodo } from "../../components";
+import { Button, FormAddList, ListTodo } from "../../components";
 import Logo from '../../assets/images/Logo.png';
 import { useRecoilState, useRecoilValue } from "recoil";
 import { filteredTodoListState, loadingState, todoListFilterState, todoListState, todoListStatsState } from "../../recoils/Todo/atom";
 import { getList } from "../../services/todo";
 import { TodoListResponse, Todos } from "../../services/types/todo";
+import ModalAssesment from "./Components/ModalAssesment";
 
 const TodoList = () => {
     interface PropsEdit {
         index: number;
         value: string;
+    }
+    interface PropsAssigment {
+        showModal: boolean;
+        assigment: number;
     }
     const [todoName, setTodoName] = useState<string>('');
     const todoListData = useRecoilValue(filteredTodoListState);
@@ -20,6 +25,10 @@ const TodoList = () => {
     const { totalList, totalCompletedTodoList } = useRecoilValue(todoListStatsState);
     const [search, setSearch] = useRecoilState(todoListFilterState);
     const [dataEdit, setDataEdit] = useState<PropsEdit | null>(null);
+    const [assigment, setAssigment] = useState<PropsAssigment>({
+        showModal: false,
+        assigment: 1
+    })
 
     const handleAddList = () => {
         const newList = [...todoList, {
@@ -124,7 +133,43 @@ const TodoList = () => {
                     onDeleted={(index: number) => handleRemoveList(index)}
                 />
             </TodoLists.Content>
-            
+            <TodoLists.Footer>
+                <Button 
+                    title={'ASSESMENTS 1'} 
+                    mode={'default'} 
+                    onClick={() => 
+                        setAssigment({
+                        assigment: 1,
+                        showModal: true
+                    })} 
+                variant={'primary'} />
+                <Button 
+                    title={'ASSESMENTS 2'} 
+                    mode={'default'} 
+                    onClick={() => 
+                        setAssigment({
+                            assigment: 2,
+                            showModal: true
+                        })
+                    } 
+                variant={'primary'} />
+                <Button 
+                    title={'ASSESMENTS 3'} 
+                    mode={'default'} 
+                    onClick={() => 
+                        setAssigment({
+                            assigment: 3,
+                            showModal: true
+                        })
+                    } 
+                variant={'primary'} />
+            </TodoLists.Footer>
+
+            <ModalAssesment 
+                showModal={assigment.showModal} 
+                assigment={assigment.assigment}
+                onClose={() => setAssigment({...assigment, showModal: false})}
+            />
         </TodoLists.Container>
     )
 }

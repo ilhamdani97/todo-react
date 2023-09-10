@@ -4,7 +4,6 @@ import colors from '../../utils/colors';
 const TodoLists = {
     Container: styled.div`
         background-color: ${colors.darkSecondGray};
-        min-height: 100vh;
     `,
     Header: styled.div`
         background-color: ${colors.darkGray};
@@ -30,6 +29,18 @@ const TodoLists = {
         }
         padding-bottom: 24px;
         margin-top: -24px;
+        min-height: 70vh;
+    `,
+    Footer: styled.div`
+        display: flex;
+        flex-direction: row,
+        justify-content: center;
+        justify-content: center; 
+        align-items:center;
+        padding: 16px;
+        background-color: ${colors.darkGray};
+        position: sticky;
+        bottom: 0;
     `
 }
 
