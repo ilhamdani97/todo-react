@@ -41,6 +41,7 @@ const TodoLists = {
         background-color: ${colors.darkGray};
         position: sticky;
         bottom: 0;
+        gap: 8px;
     `
 }
 
