@@ -20,6 +20,7 @@ const Buttons = styled.button<{ variant?: 'primary' | 'secondary' | 'disable', m
     @media (max-width: 500px) {
         padding: 8px;
         font-size: 12px;
+        margin-left: 0px;
     };
 
 `;

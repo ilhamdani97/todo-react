@@ -22,7 +22,10 @@ const Modal = {
         background-color: ${colors.lightGray};
         border-radius: 12px;
         width: 50vw;
-        ova
+        @media (max-width: 500px) {
+            width: 80vw;
+        };
+
     `,
     Header: styled.div`
         display: flex;

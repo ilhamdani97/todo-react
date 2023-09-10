@@ -13,6 +13,7 @@ const Inputs = styled.input<{variant?: 'small' | 'default'}>`
     font-size: 16px;
     @media (max-width: 768px) {
         margin-right: 0px;
+        padding: 6px;
     };
 `;
 
