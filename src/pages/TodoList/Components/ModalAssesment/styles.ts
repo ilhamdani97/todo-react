@@ -62,6 +62,7 @@ const Modal = {
         justify-content: space-between;
         align-items: center;
         align-content: center;
+        gap: 8px;
     `,
     Answer: styled.div`
         padding: 16px;
