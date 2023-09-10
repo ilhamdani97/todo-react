@@ -9,6 +9,7 @@ const Inputs = styled.input<{variant?: 'small' | 'default'}>`
     border-radius: 16px;
     padding: ${props => props.variant === 'small' ? '2px' : '12px'};
     color: ${colors.lightGray};
+    ${props => props.variant === 'small' ? 'width: 30vw;' : null}
     font-size: 16px;
 `;
 

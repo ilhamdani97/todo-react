@@ -36,7 +36,7 @@ const CardTodo = ({
                     <>
                         <Input 
                             variant={'small'}
-                            placeholder={'Search Todo List'}
+                            placeholder={'Edit'}
                             value={editValue}
                             setValue={(e) => {
                                 setEdit(e);
