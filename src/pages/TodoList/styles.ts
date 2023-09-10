@@ -26,7 +26,7 @@ const TodoLists = {
         @media (max-width: 768px) {
             margin-left: 16px;
             margin-right: 16px;
-        }
+        };
         padding-bottom: 24px;
         margin-top: -24px;
         min-height: 70vh;

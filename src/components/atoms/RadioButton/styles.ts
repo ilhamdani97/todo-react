@@ -6,12 +6,16 @@ const Radio = {
         background-color: ${props => props.active ? colors.purplePrimary : colors.white};
         border: 3px solid ${colors.purplePrimary};
         height: 18px;
-        width: 18px;
-        border-radius: 100%;
+        min-width: 18px;
+        margin-right: 16px;
+        border-radius: 18px;
         display: flex;
         justify-content:center; 
         align-items:center;
         cursor: pointer;
+        @media (max-width: 500px) {
+            margin-right: 8px;
+        };
     `,
     ImageCheck: styled.img.attrs(({src}) => ({
         alt: 'image-check',

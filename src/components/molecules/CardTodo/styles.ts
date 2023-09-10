@@ -54,7 +54,6 @@ const Todo = {
         font-size: 14px;
         color: ${props => props.active ? colors.lightGray: colors.gray100};
         font-weight: 400;
-        margin-left: 12px;
         ${props => props.active ? 'text-decoration: line-through;' : null}
     `,
     LoadingIcon: styled.div`
@@ -70,7 +69,10 @@ const Todo = {
         margin-top: 6px;
         margin-bottom: 6px;
         border-radius: 8px;
-        width: 400px;
+        width: 300px;
+        @media (max-width: 768px) {
+            width: 150px;
+        };
         ${shimmerAnimation}
     `
 }

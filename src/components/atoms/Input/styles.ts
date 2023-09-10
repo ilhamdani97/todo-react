@@ -11,6 +11,9 @@ const Inputs = styled.input<{variant?: 'small' | 'default'}>`
     color: ${colors.lightGray};
     ${props => props.variant === 'small' ? 'width: 30vw;' : null}
     font-size: 16px;
+    @media (max-width: 768px) {
+        margin-right: 0px;
+    };
 `;
 
 export default Inputs

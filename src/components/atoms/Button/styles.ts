@@ -17,6 +17,10 @@ const Buttons = styled.button<{ variant?: 'primary' | 'secondary' | 'disable', m
         border-color: ${props => props.variant === 'disable' ? colors.gray : colors.darkPurple};
         transition-duration: 0.3s;
     };
+    @media (max-width: 500px) {
+        padding: 8px;
+        font-size: 12px;
+    };
 
 `;
 

@@ -10,6 +10,9 @@ const List = {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            @media (max-width: 500px) {
+                flex-direction: column;
+            };
         `,
         ContainerTotal:  styled.div`
             display: flex;
@@ -17,6 +20,9 @@ const List = {
             align-content: center;
             align-items: center;
             margin-right: 32px;
+            @media (max-width: 500px) {
+                margin-bottom: 8px;
+            };
         `,
         ContainerComplete:  styled.div`
             display: flex;
@@ -24,6 +30,10 @@ const List = {
             align-content: center;
             align-items: center;
             margin-left: 16px;
+            @media (max-width: 500px) {
+                margin-left: 0px;
+                margin-top: 8px;
+            };
         `,
         Text: styled.text`
             font-size: 14px;
