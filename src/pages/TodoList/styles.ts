@@ -23,7 +23,7 @@ const TodoLists = {
     Content: styled.div`
         margin-left: 25%;
         margin-right: 25%;
-        @media (max-width: 768px) {
+        @media (max-width: 500px) {
             margin-left: 16px;
             margin-right: 16px;
         };
