@@ -29,18 +29,17 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Screen Empty
+<img width="1440" alt="page-empty" src="https://github.com/ilhamdani97/todo-react/assets/33895430/d2b9f929-5b56-4242-aaeb-a9a3d88d6c7f">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Screen List Todo
+<img width="1440" alt="page-with-data" src="https://github.com/ilhamdani97/todo-react/assets/33895430/4a317496-e67e-4806-8a6c-be7d5a44d16b">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screen Edit Todo
+<img width="1440" alt="edit-page" src="https://github.com/ilhamdani97/todo-react/assets/33895430/27e5a76f-afcb-4f9d-a38f-c6ec458511fe">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Screen Loading
+<img width="1440" alt="page-loading" src="https://github.com/ilhamdani97/todo-react/assets/33895430/3b6016ae-89e8-46e2-8cbe-4804dc6026b3">
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
